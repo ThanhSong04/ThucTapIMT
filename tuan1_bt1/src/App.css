@@ -1,0 +1,18 @@
+.btn{
+  width: 50px;
+  height: 50px;
+}
+.wrapper_table{
+  width: 397px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.table{
+  display: flex;
+    flex-wrap: wrap;
+}
+.item{
+  border: 1px solid #333;
+    width: 130px;
+    height: 100px;
+}

@@ -1,0 +1,31 @@
+.app{
+  text-align: center;
+  padding-top: 30px;
+}
+.app h1{
+  color: #ec4899;
+}
+.app input{
+  outline: none;
+}
+button{
+  color: #fff;
+    background-color: #ec4899;
+    border: none;
+    width: 50px;
+    height: 20px;
+    margin-left: 4px;
+  
+}
+ul{
+  list-style: none;
+    background-color: #0284c7;
+    width: 50%;
+    margin-left: 50%;
+    padding-left: 0;
+    transform: translateX(-50%);
+    border-radius: 8px;
+}
+span{
+  cursor: pointer;
+}
