@@ -5,7 +5,6 @@ function App() {
   const [jobs, setJobs] = useState([]);
   const [job, setJob] = useState('');
   const inputRef = useRef();
-  const newJobs = [...jobs];
   const handlerSubmit = () => {
     setJobs((prev) => [...prev, job]);
     setJob('');
@@ -20,7 +19,15 @@ function App() {
         {jobs.map((job, index) => (
           <li key={index}>
             {job}
-            <span onClick={() => (newJobs.splice(index, 1), setJobs(newJobs))}>&times;</span>
+            <span
+              onClick={() => {
+                const valueToRemove = job;
+                const new_arr = jobs.filter((item) => item !== valueToRemove);
+                return setJobs(new_arr);
+              }}
+            >
+              &times;
+            </span>
           </li>
         ))}
       </ul>
